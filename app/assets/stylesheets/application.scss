@@ -14,7 +14,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap"; 
 body{
-    background-color: #f5f5f5;;
+    background-color: blue;
     text-align: center!important;
     padding: 15%;
 }
@@ -41,7 +41,6 @@ th, td{
     font-size: 16px;
     margin: 0.5rem;
     width:50%;
-    color: #007bff;
 }
 select{
     position: relative;
