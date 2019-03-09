@@ -19,7 +19,7 @@
         <td><%= user.first_name %></td>
         <td><%= user.last_name %></td>
         <td><%= user.eventType %></td>
-        <td><%= user.created_at.to_time.strftime('%B %e %Y at %l:%M %p') + Time.zone_offset("PDT") %></td>
+        <td><%= user.created_at.to_time.strftime('%B %e %Y at %l:%M %p') UTC %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
