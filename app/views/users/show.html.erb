@@ -1,3 +1,4 @@
+<h1>Clocked Event</h1>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -11,14 +12,14 @@
 </p>
 
 <p>
-  <strong>Eventtype:</strong>
+  <strong>Event-type:</strong>
   <%= @user.eventType %>
 </p>
 
 <p>
-  <strong>Eventtime:</strong>
-  <%= @user.eventTime %>
+  <strong>Event-Time:</strong>
+  <%= @user.created_at.to_time.strftime('%B %e %Y at %l:%M %p') %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Edit', edit_user_path(@user), class: 'btn-primary' %> |
+<%= link_to 'Back', users_path, class: 'btn-primary' %>
